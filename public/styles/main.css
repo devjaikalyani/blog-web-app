@@ -1,0 +1,70 @@
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #c5adc5, #b2b5e0);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h2{
+    font-family: georgia;
+}
+
+span{
+    font-family:helvetica;
+}
+
+#content{
+    height: 250px;
+    width: 80%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+#submit{
+    border: none;
+    color:white;
+    padding: 15px 32px;
+    text-align:center;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+#author,#title{
+    width: 80%;
+    padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none; 
+}
+
+.code{
+    text-decoration: none !important;
+      border: none;
+    color:white;
+    padding: 5px 10px;
+    text-align:center;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 15px;
+    border-radius: 3px;
+}
+

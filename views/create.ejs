@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+
+<form action="/create" method="POST">
+    <div class="container-fluid d-flex flex-column align-items-center">
+        <br>
+        <input type="text" id="title" name="title" placeholder="Title" required />
+        <input type="text" id="author" name="author" placeholder="Author" required/>
+        <textarea id="content" name="content" placeholder="Blog Content" required></textarea>
+        <br><br>
+        <button class="gradient-background" id="submit" type="submit">Publish</button>
+        <br><br>
+    </div>
+</form>
+
+
+<%- include("partials/footer.ejs") %>

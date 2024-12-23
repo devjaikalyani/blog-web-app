@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container my-5 d-flex flex-column">
+    <div class="p-5 text-center bg-body-tertiary rounded-3">
+        <h2 class="text-body-emphasis"><%= blog.title %></h2>
+<p class=""><%= blog.publishDate.toLocaleString('default', {month:'long'})%> <%= blog.publishDate.getDate() %> <%= blog.publishDate.getFullYear()%> By <%= blog.author %>
+</p>
+        <p class="lead">
+            <%= blog.content %>
+        </p>
+           
+            
+    </div>
+</div>
+
+<div class="container ">
+        <h1>
+            
+        </h1>
+                <p>
+                   
+                </p>
+          
+</div>
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,28 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container">
+    <br>
+    <h1 class="fw-light">Explore Blogs</h2>
+
+<div class="container my-5">
+    <div class="p-5 bg-body-tertiary rounded-3 blog-list">
+        <% if (blogs.length> 0) { %> <!-- Ensure correct spacing around the condition -->
+            <% blogs.forEach(blog=> { %>
+                <div class="blog-card border-bottom">
+        <h3 class="text-body-emphasis"><%= blog.title %></h3>
+        <p class="lead">
+        <%= blog.content.substring(0, 100) %>...
+        </p>
+        <a class="code gradient-background" href="/blogs/<%= blog.id %>"><code>Read More</code></a> <!-- Link to blog details -->
+        <br><br>
+        </div>
+        <br>
+        <% }); %>
+            <% } else { %>
+                <h3 class="fw-light">No blogs available yet. Create one!</h3>
+                <% } %>
+    </div>
+</div>
+    <!-- Loop through the blogs and display each one -->
+
+<%- include("partials/footer.ejs") %>
