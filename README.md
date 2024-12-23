@@ -2,7 +2,7 @@
 A simple blog web application built with Node.js, Express.js, and EJS. The application allows users to create, view, edit, and delete blog posts. Currently, the posts are not persisted across sessions as no database is integrated in this version.
 
 Home Page
-![Screenshot 2024-12-19 at 12 56 12 PM](https://github.com/user-attachments/assets/b67c88b6-0b82-44a2-9683-1d3043f557b0)
+![Screenshot 2024-12-19 at 12 56 12 PM](https://github.com/user-attachments/assets/c2fb99b4-81d2-4ad9-9d3e-4924b6b583cf)
 
 Create Blog Page
 ![Screenshot 2024-12-19 at 1 29 07 AM](https://github.com/user-attachments/assets/eb6f520c-4ecf-41f7-993c-40b4b005827e)
