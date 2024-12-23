@@ -1,5 +1,5 @@
 # blog-web-app
-A simple blog web application built with Node.js, Express.js, and EJS. The application allows users to create, view, edit, and delete blog posts. Currently, the posts are not persisted across sessions as no database is integrated in this version.
+A simple blog web application built with Node.js, Express.js, and EJS. The application allows users to create and explore blog posts. Currently, the posts are not persisted across sessions as no database is integrated in this version.
 
 Home Page
 ![Screenshot 2024-12-19 at 12 56 12 PM](https://github.com/user-attachments/assets/c2fb99b4-81d2-4ad9-9d3e-4924b6b583cf)
