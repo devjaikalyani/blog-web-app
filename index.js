@@ -1,5 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
+import path from "path";
 
 const app = express();
 const port = 3000;
@@ -20,8 +21,9 @@ app.get("/faqs", (req,res) => {
   res.render("faqs.ejs");
 })
 
-
 app.set('view engine', 'ejs');
+
+app.set("views", path.join(__dirname, "views"));
 
 let blogs = [];
 
@@ -65,3 +67,5 @@ app.get('/blogs/:id', (req, res) => {
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
+
+export default app;
