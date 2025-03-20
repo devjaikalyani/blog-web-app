@@ -1,6 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import path from "path";
+import { fileURLToPath } from "url";
 
 const app = express();
 const port = 3000;
@@ -10,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.render("index.ejs");
+  res.render("index.ejs").send('Hello from Vercel and Express.js!');
 }); 
 
 app.get("/about", (req,res) => {
@@ -22,6 +23,11 @@ app.get("/faqs", (req,res) => {
 })
 
 app.set('view engine', 'ejs');
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.use(express.static(path.join(__dirname, "public")));
 
 app.set("views", path.join(__dirname, "views"));
 
@@ -68,4 +74,5 @@ app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
 
+module.exports = app;
 export default app;
